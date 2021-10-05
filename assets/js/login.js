@@ -60,7 +60,7 @@ $(function () {
 
         // 阻止默认体检事件
         e.preventDefault();
-        alert(1)
+        // alert(1)
         // 发送请求
         $.ajax({
            
@@ -69,7 +69,7 @@ $(function () {
             // 快速获取表单的数据
             data:$(this).serialize(),
             success:function (res) {
-                alert(2)
+                // alert(2)
                 if(res.status !==0){
                     return layer.msg("登录失败");
 
@@ -80,7 +80,7 @@ $(function () {
                 // console.log(res.token);
                 //登录成功后把token值放到localstorage中
                 localStorage.setItem('token',res.token);
-                location.href="/index.html"
+                location.href="/home/index.html"
               }
 
         })
