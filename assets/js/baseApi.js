@@ -1,7 +1,7 @@
 // 每次发送请求的时候会先调用这个函数
 $.ajaxPrefilter(function(options){
     options.url = 'http://api-breakingnews-web.itheima.net'+ options.url;
-    console.log(options.url);
+    // console.log(options.url);
     
     if(options.url.indexOf('/my/') !== -1){
     // 统一设置请求头
